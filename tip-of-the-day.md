@@ -10,3 +10,10 @@ the feauture-foo-bar branch:
 
 This will checkout the specific file in your current working tree.
 
+
+## Making a local shared git repo
+-- set git.config.sharedRepository to 2
+-- set git.config.bare to true
+-- recursively add group write permissions to the entire directory:
+        $ git chmod -R g+w .
+-- create a user for each peer 
